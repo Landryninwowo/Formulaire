@@ -1,0 +1,78 @@
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    
+    <div class="container my-5">
+           <div class="row">
+               <div class="col-4 col-md-2">
+                  <div class="mb-3">
+                    <select class="form-select mode" aria-label="Default select example">
+                      <option value="light">light</option>
+                      <option value="dark">dark</option>
+                    </select>
+                  </div>
+               </div>
+           </div>
+
+        <div class="row" style="margin-left: 150px;">
+            <div class="col-9">
+              <form>
+                <div class="mb-3">
+                  <label for="nom" class="form-label">NOM:</label>
+                  <input type="text" class="form-control" id="nom">
+                  <div id="errorNom" class="invalid-feedback"></div>
+                </div><br>
+                <div class="mb-3">
+                  <label for="email" class="form-label">EMAIL</label>
+                  <input type="text" class="form-control" id="email" placeholder="name@example.com">
+                  <div id="errorEmail" class="invalid-feedback"></div>
+                </div><br>
+                <div class="mb-3">
+                  <label for="tel" class="form-label">TELEPHONE</label>
+                  <input type="tel" class="form-control" id="tel" placeholder="">
+                  <div id="errorTel" class="invalid-feedback"></div>
+                </div><br>
+                <div class="mb-3">
+                  <label for="file" class="form-label">VOTRE PHOTO</label>
+                  <input type="file" class="form-control" id="file" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                  <div id="errorFile" class="invalid-feedback"></div>
+                </div><br>
+                <div class="mb-3">
+                  <label for="color" class="form-label">CHOISIR VOTRE COULEUR</label>
+                  <input type="color" class="form-control form-control-color" id="color" value="#563d7c" title="Choose your color" style="width: 100px; height: 50px;">
+                  <p>Vous avez choisir <span class="color text-danger"></span></p>
+                </div><br>
+                <select class="form-select" id="pays" aria-label="Default select example">
+                  <option selected>Choisir un pays</option>
+                  <option value="france">France</option>
+                  <option value="cameroun">Cameroun</option>
+                  <option value="gabon">Gabon</option>
+                </select>
+                <p class="pays"></p>
+                <div class="mb-3">
+                  <label for="range" class="form-label">VOTRE POIDS <span class="fw-bold poids"></span>KG</label>
+                  <input min="0" max="100" step="1" type="range" class="form-range" id="range">
+                </div> <br>
+                <div class="boutton">
+                  <button type="submit" class="btn btn-primary W-100">Envoyer</button>
+                </div>
+              </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
